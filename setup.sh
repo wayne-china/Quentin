@@ -1,7 +1,7 @@
 #!/bin/bash
 
 current_path=$(cd "$(dirname "$0")"; pwd)
-install_software='httpd'
+install_software='httpd mod_wsgi'
 install_app='django==1.7 django-grappelli django-pagination django-markdown2'
 http_wsgi_path='/etc/httpd/conf.d/wsgi.conf'
 
