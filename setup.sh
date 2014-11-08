@@ -23,10 +23,11 @@ then
   file='/wsgi.py'
   sed -i s~path~$current_path$file~g ./conf/wsgi.conf
   if [ -x $http_wsgi_path ]
-    then
-      sudo cat ./conf/wsgi.conf >> $http_wsgi_path
+  then
+    sudo cat ./conf/wsgi.conf >> $http_wsgi_path
   else
     sudo cp ./conf/wsgi.conf /etc/httpd/conf.d/
+  fi
 # 修改app 中wsgi.py的路径
   sed -i s~AppPath~$current_path~g ./Quentin/wsgi.py
 
