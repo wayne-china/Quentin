@@ -1,5 +1,5 @@
 """
-Django settings for gallery project.
+Django settings for Quentin project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gallery',
+    'Quentin',
     'pagination',
     'markdown',
 )
@@ -64,9 +64,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
 )
 
-ROOT_URLCONF = 'gallery.urls'
+ROOT_URLCONF = 'Quentin.urls'
 
-WSGI_APPLICATION = 'gallery.wsgi.application'
+WSGI_APPLICATION = 'Quentin.wsgi.application'
 
 
 # Database
@@ -97,14 +97,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-#STATIC_URL = '/static/'
 
-#MEDIA_ROOT=os.path.join(os.path.dirname(__file__),'..','media').replace('\\','/') 
-#MEDIA_ROOT = os.path.abspath(os.path.join(ROOT_PATH, 'media/'))
-#MEDIA_URL='/media/'
-#ADMIN_MEDIA_PREFIX = '/media/admin/' 
 STATIC_URL = '/static/'
-#STATIC_DIRS = '/home/rollingwayne/gallery/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
