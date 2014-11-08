@@ -17,7 +17,7 @@ https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 
 import os
 import sys
-path = '/home/rollingwayne/gallery'
+path = 'AppPath'
 if path not in sys.path:
     sys.path.append(path)
 current_dir = os.path.dirname(__file__)
