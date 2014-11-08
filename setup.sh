@@ -1,7 +1,7 @@
 #!/bin/bash
 
 current_path=$(cd "$(dirname "$0")"; pwd)
-install_software='pip httpd'
+install_software='httpd'
 install_app='django==1.7 grappelli pagination markdown2'
 http_wsgi_path='/etc/httpd/conf.d/wsgi.conf'
 
@@ -13,6 +13,8 @@ then
   for software in $install_software
   do sudo yum install -y $software
   done
+ 
+  easy_install pip
 
   for app in $install_app
   do sudo pip install $app
