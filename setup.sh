@@ -12,7 +12,6 @@ then
   do pip install $app
   done
 
-  yum install httpd 
 else echo 'Please install Yum packages'
 fi
 
