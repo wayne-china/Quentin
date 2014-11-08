@@ -1,16 +1,17 @@
 #!/bin/bash
 
 current_path=$(cd "$(dirname "$0")"; pwd)
-install_software='django pip httpd'
-install_app='grappelli pagination markdown2'
+install_software='pip httpd'
+install_app='django==1.7 grappelli pagination markdown2'
 http_wsgi_path='/etc/httpd/conf.d/wsgi.conf'
 
 
 if which yum
 then 
 # 安装必要软件
+  sudo yum update
   for software in $install_software
-  do sudo yum install $software
+  do sudo yum install -y $software
   done
 
   for app in $install_app
