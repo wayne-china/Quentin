@@ -1,1 +1,16 @@
 这是一个简易的基于Django的博客系统，只有最简单的几个功能。
+
+系统要求：
+OpenSuse : 13.1
+Python : 2.7
+Django : 1.7
+Apache : 2
+Apache wsgi_mod
+
+需要安装的Django插件：
+django-grappelli
+django-pagination
+django-markdown2
+
+setup.sh 脚本是安装脚本，但是不同系统可能会有兼容性问题，需要手动修改。
+
