@@ -18,6 +18,15 @@ then
   for app in $install_app
   do pip install $app
   done
+# 移动源代码至apache制定路径
+  html_path='/srv/www/htdocs/'
+  if [ -d $html_path ]
+  then 
+    mv ./Quentin $html_path 
+  else
+    echo " $html_path 路径不存在 "
+  fi
+
 # 修改apache wsgi配置中的路径 
   file='/wsgi.py'
   sed -i s~path~$current_path$file~g ./conf/wsgi.conf
