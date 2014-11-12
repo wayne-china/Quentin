@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from gallery.views import Posts,blog_detail,search,archive
+from Quentin.views import Posts,blog_detail,search,archive
 from django.conf import settings
 from django.views.static import *
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
