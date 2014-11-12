@@ -30,6 +30,8 @@ then
   fi
 # 修改app 中wsgi.py的路径
   sed -i s~AppPath~$current_path~g ./Quentin/wsgi.py
+# 启动服务
+  service httpd start
 
 else echo 'Please install Yum packages'
 fi

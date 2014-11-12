@@ -4,13 +4,13 @@
 OpenSuse : 13.1
 Python : 2.7
 Django : 1.7
-Apache : 2
+Apache : 2.4.6
 Apache wsgi_mod
 
 需要安装的Django插件：
 django-grappelli
 django-pagination
-django-markdown2
+django-markdown
 
 setup.sh 脚本是安装脚本，但是不同系统可能会有兼容性问题，需要手动修改。
 
