@@ -2,7 +2,7 @@
 
 current_path=$(cd "$(dirname "$0")"; pwd)
 install_software='apache2 apache2-mod_wsgi'
-install_app='django==1.7 django-grappelli django-pagination django-markdown'
+install_app='django==1.7 django-grappelli django-pagination django-markdown pytz'
 http_wsgi_path='/etc/apache2/conf.d/wsgi.conf'
 
 
