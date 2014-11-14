@@ -29,3 +29,4 @@ setup.sh 脚本是安装脚本，但是不同系统可能会有兼容性问题�
 </Files>
 中的 Deny from all 改为 Allow from all
 
+前端不再是手写 html 和 css 而是改为使用 Bootstrap.
