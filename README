@@ -11,6 +11,7 @@ Apache wsgi_mod
 django-grappelli
 django-pagination
 django-markdown
+pytz
 
 setup.sh 脚本是安装脚本，但是不同系统可能会有兼容性问题，需要手动修改。
 安装完成之后，需要修改 /etc/apache2/httpd.conf 中的配置
