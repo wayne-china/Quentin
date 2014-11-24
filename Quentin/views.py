@@ -74,4 +74,4 @@ def archive(request):
     archive_link = time_line(request)
     context.update(archive_link)
  
-    return render(request,'posts.html',context)
+    return render(request,'base.html',context)
