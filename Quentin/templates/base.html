@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html>
+
 <head>
   <title>Wayne's Blog</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--link  href="{% static "base.css" %}" rel="stylesheet" type="text/css"-->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet"></link>
+  <link href="{% static "screen.css" %}" rel="stylesheet"></link>
+  <script src="js/bootstrap.min.js"></script>
 </head>
-  <body >
-    <div class="main_div">
-        <div id="title" class="title">
-            {% block title %}
-            <a style="text-decoration:none;color:#428bca" href = "/">Quentin</a>
-            {% endblock %}
-        </div>
-        <div id="content" class="content">
-            <div class="left-part" >
-            {% block contents %}
-            {% endblock %} 
-            </div>
-            <div class="right-part">
-            {% block about %}
-            <div class="about" style="color:#8A6D3B;"> Rollingwayne </div><br/>
-            <div class="about"> For my favorite director! </div><br/>
-            {% endblock %}
-            {% block sidebar %}
-            {% endblock %}
-            </div>
-            <div style="clear:both;"></div>
-            <div class="bottom-part">
-            {% block comments %}
-            {% endblock %} 
-            </div>
-        </div>
+	
+<body class="home-template">
+
+
+    {% block title %}
+    <header class="main-header" style="background-image: url({% static "picture.jpg" %});" >
+    <div class="vertical">
+       <div class="main-header-content inner">
+         <h1 class="page-title">博客</h1>
+         <h2 class="page-description">鞭策自己，不断前进</h2>
+       </div>
     </div>
-  </body>
+    <a id="content"class="scroll-down icon-arrow-left" href="#content" data-offset="-45" ></a>
+    </header>
+    {% endblock %}
+ 
+    <main id="content" class="content" role="main">
+      <article class="post tag-kai-shi-shi-yong">
+
+
+      <header class="post-header"> 
+        {% block contents %}
+
+        {% endblock %} 
+        {% block comments %}
+        {% endblock %}
+      </header>
+      </article>
+
+    </div>
+</body>
+
 </html>
