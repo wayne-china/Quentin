@@ -29,3 +29,4 @@ setup.sh 脚本是安装脚本，但是不同系统可能会有兼容性问题�
 </Files>
 中的 Deny from all 改为 Allow from all
 
+另外 简单优化过界面的 branch , 安装方式完全相同。
